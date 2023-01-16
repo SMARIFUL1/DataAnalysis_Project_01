@@ -106,7 +106,7 @@ from  #PercentPopVac
 
 
 
---Creat view for later use in visualization
+--Creat view 
 
 Create View  PercentPopVac as
 select  dea.continent, dea.date, dea.location, dea.population, vac.new_vaccinations, sum(Cast(vac.new_vaccinations as bigint)) --Here bigint used because int can't handle the big integer
